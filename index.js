@@ -61,14 +61,12 @@ app.post("/1-M/makeperson2", async (req, res) => {
 })
 
 // New person id
-// 639667b212038c48285564ea
 
 app.post("/1-M/makeaddress2", async (req, res) => {
     res.json( await Address2.create(req.body))
 })
 
 // New address id
-// 64a9b013ac9af0e6c9909f3e
 
 app.post("/1-M/linkaddress2/:personid/:addressid", async (req, res) => {
     // get the targeted person
